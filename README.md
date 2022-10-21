@@ -30,7 +30,7 @@ From: 16 September 2017 - To: 20 October 2022
 
 Total Time: 1,596 hrs 49 mins
 
-PHP              1,010 hrs 39 mins>>>>>>>>>>>>>>>>---------   63.29 %
+PHP              1,010 hrs 39 mins >>>>>>>>>>>>>>>>---------   63.29 %
 CSS              236 hrs 16 mins >>>>---------------------   14.80 %
 HTML             136 hrs 56 mins >>-----------------------   08.58 %
 JavaScript       58 hrs 23 mins  >------------------------   03.66 %
