@@ -7,13 +7,13 @@
 
 - 💬 Ask me about **PHP, jQuery, Bootstrap and CSS**
 
-- 📫 How to reach me **vayu.dugar21@gmail.com**
+- 📫 Reach me @ **vayu.dugar21@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://codepen.io/ddg1-vayu" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="ddg1-vayu" height="30" width="40" /></a>
 <a href="https://twitter.com/vayudugar" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="vayudugar" height="30" width="40" /></a>
 <a href="https://linkedin.com/in/vayudugar" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="vayudugar" height="30" width="40" /></a>
+<a href="https://codepen.io/ddg1-vayu" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="ddg1-vayu" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
