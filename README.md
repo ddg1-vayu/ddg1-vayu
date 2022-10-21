@@ -21,5 +21,7 @@
 
 <p>&nbsp;<img align="left" src="https://github-readme-stats.vercel.app/api?username=ddg1-vayu&show_icons=true&locale=en" alt="ddg1-vayu" /></p>
 
+<img src="https://github.com/ddg1-vayu/ddg1-vayu/blob/main/images/stat.svg" alt="Vayu's WakaTime Activity"/>
+
 <!--START_SECTION:waka-->
 <!--END_SECTION:waka-->
