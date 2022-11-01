@@ -1,0 +1,37 @@
+{
+	"Basic CSS Styles": {
+		"prefix": "basic",
+		"body": [
+			"* { scroll-behavior: smooth; scrollbar-width: thin; scrollbar-color: #605c5c #ececec; box-sizing: border-box; }\n\n::-webkit-scrollbar { width: 0.675rem; height: 0.675rem; }\n\n::-webkit-scrollbar-thumb { background: #605c5c; }\n\n::-webkit-scrollbar-track { background: #ececec; }\n\n"
+		],
+		"description": "Basic CSS Styles"
+	},
+	"Back to Top Button": {
+		"prefix": "to_top",
+		"body": [
+			"#btn-back-to-top{display:none;position:fixed;font-size:20px;bottom:48px;right:16px;border-radius:.375rem;padding:6px 12px 9px!important;z-index:5;transition:.5s all ease}\n\nbutton#btn-back-to-top:focus{outline:0;box-shadow:none;transition:.5s all ease}\n\n"
+		],
+		"description": "Back to Top Button"
+	},
+	"Footer Styles": {
+		"prefix": "footer",
+		"body": [
+			"footer { display: flex; align-items: center; justify-content: space-between; padding: 0.75rem 1rem; }\n\n"
+		],
+		"description": "Styles for <FOOTER>"
+	},
+	"Pre Styles": {
+		"prefix": "pre",
+		"body": [
+			"pre { font-family: monospace, sans-serif; font-weight: 600; font-size: 0.75rem; font-size: clamp(0.75rem, 0.725rem + 0.125vw, 0.875rem); line-height: normal; max-height: 32rem; margin: 0; overflow: auto; padding-right: 0.375rem; }\n\npre::-webkit-scrollbar { width: 0.375rem; height: 0.375rem; }\n\npre::-webkit-scrollbar-thumb { border-radius: 1rem; }\n\npre::-webkit-scrollbar-track { border-radius: 1rem; }\n\n"
+		],
+		"description": "Styles for <PRE>"
+	},
+	"Modal Styles": {
+		"prefix": "modal",
+		"body": [
+			".modal-dialog { margin: 4rem auto !important; max-width: 66.67%; }\n\n.modal-header { padding: 0.75rem 0.75rem !important; border-top-left-radius: 0.375rem !important; border-top-right-radius: 0.375rem !important; }\n\n.modal-header > .btn-danger { font-size: 1.125rem !important; padding: 0.325rem 0.625rem !important; }\n\n.modal-content { border-radius: 0.375rem !important; border: 0 !important; }\n\n.modal-body { padding: 0.75rem !important; max-height: 36rem !important; }\n\n"
+		],
+		"description": "Styles for Modal elements"
+	}
+}
