@@ -1,0 +1,412 @@
+{
+	"clock.alignment": "Right",
+	"clock.format": "dddd | mmm dd | hh:MM:ss TT",
+	"code-runner.executorMap": {
+		"php": "C:\\xampp\\php\\php.exe"
+	},
+	"colorize.languages": [
+		"css",
+		"html",
+		"javascript",
+		"jsonc",
+		"json"
+	],
+	"cSpell.allowCompoundWords": true,
+	"cSpell.enableFiletypes": [
+		"xml"
+	],
+	"cSpell.language": "en",
+	"cSpell.ignoreWords": [
+		"undislike"
+	],
+	"cSpell.userWords": [
+		"behavioural",
+		"Demio",
+		"Dugar",
+		"hbspt",
+		"hubspotutk",
+		"kaleyra",
+		"Kolkata",
+		"Photoshop",
+		"rediffmail",
+		"Vayu"
+	],
+	"editor.bracketPairColorization.enabled": true,
+	"editor.cursorBlinking": "smooth",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.find.addExtraSpaceOnTop": false,
+	"editor.fontFamily": "Fira Code iScript",
+	"editor.fontLigatures": "'zero', 'ss02', 'ss03', 'ss04', 'ss05', 'calt'",
+	"editor.fontSize": 16,
+	"editor.formatOnType": true,
+	"editor.guides.bracketPairs": "active",
+	"editor.guides.indentation": true,
+	"editor.inlayHints.enabled": "on",
+	"editor.insertSpaces": false,
+	"editor.lineHeight": 1.5,
+	"editor.linkedEditing": true,
+	"editor.minimap.enabled": false,
+	"editor.minimap.maxColumn": 150,
+	"editor.minimap.renderCharacters": false,
+	"editor.renderWhitespace": "none",
+	"editor.scrollBeyondLastLine": false,
+	"editor.stickyScroll.enabled": true,
+	"editor.stickyScroll.maxLineCount": 4,
+	"editor.suggestSelection": "first",
+	"editor.tabSize": 2,
+	"editor.tokenColorCustomizations": {
+		"[Dark Mint]": {
+			"textMateRules": [
+				{
+					"scope": [
+						"comment",
+						"entity.name.type.class",
+						"keyword",
+						"constant",
+						"storage.modifier",
+						"storage.type.class.js",
+						"entity.name.method.js",
+						"entity.name.class.js",
+						"entity.name.tag.doctype",
+						"entity.other.attribute-name",
+						"entity.other.attribute-name.tag.jade",
+						"entity.other.attribute-name.tag.pug"
+					],
+					"settings": {
+						"fontStyle": "italic"
+					}
+				},
+				{
+					"scope": [
+						"invalid",
+						"keyword.operator",
+						"constant.numeric.css",
+						"keyword.other.unit.px.css",
+						"constant.numeric.decimal.js",
+					],
+					"settings": {
+						"fontStyle": ""
+					}
+				},
+				{
+					"scope": [
+						"string.quoted.single",
+						"string.quoted.double",
+						"string.quoted.other.backtick",
+						"source.sql.embedded.php"
+					],
+					"settings": {
+						"foreground": "#fff",
+					}
+				},
+				{
+					"scope": [
+						"comment.block.xml"
+					],
+					"settings": {
+						"fontStyle": "italic bold"
+					}
+				},
+				{
+					"scope": [
+						"meta.property-value.css",
+						"support.constant.font-name.css"
+					],
+					"settings": {
+						"fontStyle": "italic bold"
+					}
+				},
+				{
+					"scope": [
+						"constant.language"
+					],
+					"settings": {
+						"foreground": "#40E0D0"
+					}
+				},
+				{
+					"scope": [
+						"keyword.other.unit.px.css",
+						"keyword.other.unit.rem.css",
+						"keyword.other.unit.em.css"
+					],
+					"settings": {
+						"fontStyle": "italic bold"
+					}
+				},
+				{
+					"scope": [
+						"keyword.other.DML.sql",
+						"keyword.other.order.sql",
+						"keyword.operator.logical",
+						"keyword.other.sql",
+						"keyword.other.alias.sql",
+						"keyword.other.DDL.create.II.sql"
+					],
+					"settings": {
+						"fontStyle": "bold",
+						"foreground": "#C71585"
+					}
+				},
+				{
+					"scope": [
+						"support.function.curl.php",
+						"support.function.json.php",
+						"support.function.var.php",
+						"support.function.url.php",
+						"support.function.info.php",
+						"support.function.network.php",
+						"support.function.file.php",
+						"support.function.string.php",
+						"support.function.array.php",
+						"support.function.mysqli.php",
+						"support.function.math.php",
+						"support.function.xml.php",
+						"support.function.hash.php",
+						"support.function.datetime.php",
+						"support.function.construct.php",
+						"support.function.construct.output.php",
+						"support.function.basic_functions.php",
+						"entity.name.function.js",
+						"entity.name.function.php",
+						"support.function.streamsfuncs.php",
+						"support.function.filter.php",
+						"support.function.php_pcre.php",
+						"support.function.session.php",
+						"support.function.password.php",
+						"support.function.datetime.sql"
+					],
+					"settings": {
+						"fontStyle": "bold",
+						"foreground": "#0066CC"
+					}
+				},
+				{
+					"scope": [
+						"keyword.operator.comparison",
+						"keyword.operator.assignment",
+						"keyword.operator.arithmetic",
+						"keyword.operator.arithmetic.php",
+						"keyword.operator.key.php",
+						"keyword.operator.error-control.php"
+					],
+					"settings": {
+						"foreground": "#DC143C",
+						"fontStyle": "bold"
+					}
+				},
+				{
+					"scope": [
+						"keyword.other.use.php",
+						"keyword.other.new.php"
+					],
+					"settings": {
+						"foreground": "#F368E0",
+						"fontStyle": "bold"
+					}
+				},
+				{
+					"scope": [
+						"comment.block.php",
+						"comment.line.double-slash",
+						"comment.block.html"
+					],
+					"settings": {
+						"fontStyle": "italic bold",
+						"foreground": "#999"
+					}
+				},
+				{
+					"scope": [
+						"entity.other.attribute-name.pseudo-class.css"
+					],
+					"settings": {
+						"foreground": "#E0E000"
+					}
+				},
+				{
+					"scope": [
+						"constant.other.php",
+						"source.json meta.structure.dictionary.json support.type.property-name.json",
+						"support.type.property-name.json.comments",
+					],
+					"settings": {
+						"foreground": "#ffd700"
+					}
+				},
+				{
+					"scope": [
+						"constant.other.php"
+					],
+					"settings": {
+						"fontStyle": "bold italic",
+					}
+				},
+				{
+					"scope": [
+						"support.type.property-name.json.comments"
+					],
+					"settings": {
+						"fontStyle": "bold",
+					}
+				},
+				{
+					"scope": [
+						"constant.numeric",
+						"constant.numeric.css"
+					],
+					"settings": {
+						"foreground": "#f00",
+						"fontStyle": "bold"
+					}
+				},
+				{
+					"scope": [
+						"entity.name.tag.html"
+					],
+					"settings": {
+						"fontStyle": "bold",
+						"foreground": "#9529c0"
+					}
+				},
+				{
+					"scope": [
+						"variable.other.readwrite.js",
+						"variable.other.object.js",
+						"constant.language.boolean.false.js",
+						"constant.language.boolean.true.js",
+						"variable.language.this.js"
+					],
+					"settings": {
+						"fontStyle": "bold italic",
+						"foreground": "#01d1d1"
+					}
+				},
+				{
+					"scope": [
+						"meta.property-name.css",
+						"string.quoted.other.backtick.sql"
+					],
+					"settings": {
+						"foreground": "#40E0D0"
+					}
+				},
+				{
+					"scope": [
+						"string.unquoted.index.php"
+					],
+					"settings": {
+						"foreground": "#00aba9"
+					}
+				},
+				{
+					"scope": [
+						"variable.other.php"
+					],
+					"settings": {
+						"foreground": "#33FF00"
+					}
+				},
+				{
+					"scope": [
+						"support.constant.std.php",
+						"support.constant.ext.php"
+					],
+					"settings": {
+						"foreground": "#ffcc00",
+						"fontStyle": "italic bold"
+					}
+				},
+				{
+					"scope": [
+						"constant.other.table-name.sql"
+					],
+					"settings": {
+						"foreground": "#ffd700",
+					}
+				},
+				{
+					"scope": [
+						"constant.other.database-name.sql"
+					],
+					"settings": {
+						"foreground": "#00B894",
+					}
+				},
+				{
+					"scope": [
+						"variable.other.global.php",
+						"variable.other.global.safer.php",
+					],
+					"settings": {
+						"foreground": "#00ffff",
+					}
+				},
+				{
+					"scope": [
+						"entity.other.attribute-name.html"
+					],
+					"settings": {
+						"fontStyle": "bold italic"
+					}
+				}
+			]
+		},
+	},
+	"editor.unicodeHighlight.allowedCharacters": {
+		"’": true,
+		"–": true
+	},
+	"editor.wordWrap": "on",
+	"editor.wordWrapColumn": 150,
+	"emmet.triggerExpansionOnTab": true,
+	"explorer.confirmDragAndDrop": false,
+	"explorer.decorations.badges": true,
+	"files.autoSave": "onFocusChange",
+	"files.trimFinalNewlines": true,
+	"html.format.indentHandlebars": true,
+	"html.format.indentInnerHtml": true,
+	"json.format.enable": true,
+	"liveServer.settings.CustomBrowser": "microsoft-edge",
+	"liveServer.settings.donotShowInfoMsg": true,
+	"liveServer.settings.donotVerifyTags": true,
+	"liveServer.settings.NoBrowser": true,
+	"liveServer.settings.useWebExt": true,
+	"liveshare.presence": true,
+	"material-icon-theme.opacity": 1,
+	"material-icon-theme.saturation": 1,
+	"path-intellisense.autoSlashAfterDirectory": true,
+	"path-intellisense.extensionOnImport": true,
+	"prettier.useTabs": true,
+	"php.validate.executablePath": "C:/xampp/php/php.exe",
+	"php.debug.executablePath": "C:/xampp/php/php.exe",
+	"security.workspace.trust.untrustedFiles": "open",
+	"terminal.integrated.cursorStyle": "line",
+	"terminal.integrated.defaultProfile.windows": "Command Prompt",
+	"thunder-client.editorFontSize": 12,
+	"thunder-client.responseLimit": 20,
+	"window.commandCenter": true,
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.productIconTheme": "fluent-icons",
+	"workbench.startupEditor": "none",
+	"workbench.tree.renderIndentGuides": "always",
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[php]": {
+		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+	},
+	"[sql]": {
+		"editor.defaultFormatter": "mtxr.sqltools"
+	},
+	"[xml]": {
+		"editor.defaultFormatter": "DotJoshJohnson.xml"
+	},
+	"workbench.colorTheme": "Dark Mint"
+}
