@@ -1,0 +1,72 @@
+{
+	"PHP Start": {
+		"prefix": "p_s",
+		"body": [
+			"<?php\n\t\n?>"
+		],
+		"description": "PHP Start"
+	},
+	"HTML Script": {
+		"prefix": "j_s",
+		"body": [
+			"<script>\n\t\n</script>"
+		],
+		"description": "HTML Script"
+	},
+	"Data Table": {
+		"prefix": "datatable",
+		"body": [
+			"<link rel=\"stylesheet\" type=\"text/css\" href=\"https://cdn.datatables.net/v/bs5/jszip-2.5.0/dt-1.11.5/b-2.2.2/b-colvis-2.2.2/b-html5-2.2.2/b-print-2.2.2/r-2.2.9/sc-2.0.5/sb-1.3.2/sp-2.0.0/sl-1.3.4/sr-1.1.0/datatables.min.css\" />\n<script type=\"text/javascript\" src=\"https://cdn.datatables.net/v/bs5/jszip-2.5.0/dt-1.11.5/b-2.2.2/b-colvis-2.2.2/b-html5-2.2.2/b-print-2.2.2/r-2.2.9/sc-2.0.5/sb-1.3.2/sp-2.0.0/sl-1.3.4/sr-1.1.0/datatables.min.js\"></script>"
+		],
+		"description": "Data Table Libraires"
+	},
+	"Bootstrap 5.2.1 with jQuery 3.6": {
+		"prefix": "bslib",
+		"body": [
+			"<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css\" integrity=\"sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT\" crossorigin=\"anonymous\">\n<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8\" crossorigin=\"anonymous\"></script>\n<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js\"></script>"
+		],
+		"description": "Bootstrap 5.2.1 with jQuery 3.6"
+	},
+	"Bootstrap Modal": {
+		"prefix": "modal",
+		"body": [
+			"<div class=\"modal fade\" id=\"data-modal\" tabindex=\"-1\" aria-hidden=\"true\" aria-labelledby=\"data-modal-label\">\n\t<div class=\"modal-dialog\">\n\t\t<div class=\"modal-content\">\n\t\t\t<div class=\"modal-header\">\n\t\t\t\t<h4 class=\"modal-title fw-bold text-uppercase\" id=\"data-modal-label\"></h4>\n\t\t\t\t<button type=\"button\" class=\"btn btn-danger\" data-bs-dismiss=\"modal\" tabindex=\"-1\" aria-label=\"Close\" title=\"Close\">&#x2718;</button>\n\t\t\t</div>\n\t\t\t<div class=\"modal-body text-start\" id=\"data-modal-content\"></div>\n\t\t</div>\n\t</div>\n</div>"
+		],
+		"description": "Bootstrap Modal with Close button"
+	},
+	"MySQL INSERT": {
+		"prefix": "sql_i",
+		"body": [
+			"INSERT INTO `` (``, ``, ``, ``, ``) VALUES ('', '', '', '', '');\n"
+		],
+		"description": "MysSQL Insert Query"
+	},
+	"MySQL UPDATE": {
+		"prefix": "sql_u",
+		"body": [
+			"UPDATE `` SET `` = '', `` = '' WHERE `` = '';\n"
+		],
+		"description": "MysSQL UPDATE Query"
+	},
+	"MySQL DELETE": {
+		"prefix": "sql_d",
+		"body": [
+			"DELETE FROM `` WHERE `` = '' ORDER BY `` ASC/DESC;\n"
+		],
+		"description": "MysSQL DELETE Query"
+	},
+	"MySQL Row Count": {
+		"prefix": "sql_count",
+		"body": [
+			"SELECT COUNT(*) FROM `` WHERE `` = '';\n"
+		],
+		"description": "MysSQL Row Count"
+	},
+	"MySQL SELECT": {
+		"prefix": "sql_s",
+		"body": [
+			"SELECT * FROM `` WHERE `` = '';\n"
+		],
+		"description": "MysSQL SELECT Query"
+	}
+}
