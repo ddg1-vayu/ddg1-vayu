@@ -2,7 +2,8 @@
 	"clock.alignment": "Right",
 	"clock.format": "dddd | mmm dd | hh:MM:ss TT",
 	"code-runner.executorMap": {
-		"php": "C:\\xampp\\php\\php.exe"
+		"php": "C:\\xampp\\php\\php.exe",
+		"python": "python"
 	},
 	"colorize.languages": [
 		"css",
@@ -174,7 +175,13 @@
 						"support.function.php_pcre.php",
 						"support.function.session.php",
 						"support.function.password.php",
-						"support.function.datetime.sql"
+						"support.function.datetime.sql",
+						"support.function.builtin.python",
+						"meta.function-call.generic.python",
+						"support.type.python",
+						"entity.name.function.python",
+						"support.function.libxml.php",
+						"support.function.simplexml.php"
 					],
 					"settings": {
 						"fontStyle": "bold",
@@ -272,6 +279,7 @@
 				{
 					"scope": [
 						"variable.other.readwrite.js",
+						"variable.other.constant.js",
 						"variable.other.object.js",
 						"constant.language.boolean.false.js",
 						"constant.language.boolean.true.js",
@@ -373,6 +381,7 @@
 	"liveServer.settings.NoBrowser": true,
 	"liveServer.settings.useWebExt": true,
 	"liveshare.presence": true,
+	"material-icon-theme.folders.color": "#01d1d1",
 	"material-icon-theme.opacity": 1,
 	"material-icon-theme.saturation": 1,
 	"path-intellisense.autoSlashAfterDirectory": true,
@@ -385,7 +394,9 @@
 	"terminal.integrated.defaultProfile.windows": "Command Prompt",
 	"thunder-client.editorFontSize": 12,
 	"thunder-client.responseLimit": 20,
+	"vscode-edge-devtools.webhint": false,
 	"window.commandCenter": true,
+	"workbench.colorTheme": "Dark Mint",
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.productIconTheme": "fluent-icons",
 	"workbench.startupEditor": "none",
@@ -402,11 +413,13 @@
 	"[php]": {
 		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
 	},
+	"[python]": {
+		"editor.defaultFormatter": "ms-python.python"
+	},
 	"[sql]": {
 		"editor.defaultFormatter": "mtxr.sqltools"
 	},
 	"[xml]": {
 		"editor.defaultFormatter": "DotJoshJohnson.xml"
-	},
-	"workbench.colorTheme": "Dark Mint"
+	}
 }
