@@ -26,16 +26,16 @@
 <!--START_SECTION:waka-->
 
 ```text
-From: 16 September 2017 - To: 29 November 2022
+From: 16 September 2017 - To: 30 November 2022
 
-Total Time: 1,699 hrs 58 mins
+Total Time: 1,705 hrs 12 mins
 
-PHP              1,085 hrs 12 mins>>>>>>>>>>>>>>>>---------   63.84 %
-CSS              240 hrs 38 mins >>>>---------------------   14.16 %
-HTML             136 hrs 59 mins >>-----------------------   08.06 %
-JavaScript       61 hrs 54 mins  >------------------------   03.64 %
-Blade Template   47 hrs 12 mins  >------------------------   02.78 %
-Other            38 hrs 27 mins  >------------------------   02.26 %
+PHP              1,088 hrs 31 mins>>>>>>>>>>>>>>>>---------   63.84 %
+CSS              240 hrs 38 mins >>>>---------------------   14.11 %
+HTML             136 hrs 59 mins >>-----------------------   08.03 %
+JavaScript       62 hrs 3 mins   >------------------------   03.64 %
+Blade Template   47 hrs 12 mins  >------------------------   02.77 %
+Other            40 hrs 9 mins   >------------------------   02.36 %
 ```
 
 <!--END_SECTION:waka-->
