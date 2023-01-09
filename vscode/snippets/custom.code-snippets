@@ -1,8 +1,15 @@
 {
+	"Python Starter": {
+		"prefix": "py_s",
+		"body": [
+			"import sys\nimport io\n\nsys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding=\"utf-8\")  # type: ignore\nsys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding=\"utf-8\")  # type: ignore\n\n"
+		],
+		"description": "Python Starter"
+	},
 	"PHP Start": {
 		"prefix": "p_s",
 		"body": [
-			"<?php\n\t\n?>"
+			"<?php\n\t$0\n?>"
 		],
 		"description": "PHP Start"
 	},
