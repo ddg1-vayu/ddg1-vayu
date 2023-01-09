@@ -1,0 +1,9 @@
+{
+	"HR on Console": {
+		"prefix": "py_hr",
+		"body": [
+			"print(\"─\" * 75)"
+		],
+		"description": "HR on Terminal"
+	}
+}
