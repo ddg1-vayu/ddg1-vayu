@@ -11,14 +11,21 @@
 		"body": [
 			"echo \"<hr>\";"
 		],
-		"description": "Insert horizontal row"
+		"description": "Insert html horizontal row"
+	},
+	"Console HR": {
+		"prefix": "p_chr",
+		"body": [
+			"for (\\$i = 1; \\$i <= 100; \\$i++) {\n\techo \"─\";\n}"
+		],
+		"description": "Insert horizontal row for console"
 	},
 	"Webhook Contents": {
 		"prefix": "p_webhook",
 		"body": [
 			"\\$webhook = file_get_contents('php://input');\n\\$request = json_decode(\\$webhook, true);"
 		],
-		"description": "Get Webhook Contents"
+		"description": "Get Webhook Content"
 	},
 	"File Name": {
 		"prefix": "p_filename",
@@ -30,7 +37,7 @@
 	"File Generate": {
 		"prefix": "p_filegen",
 		"body": [
-			"\\$file = 'logs/file_name_' . time() . '.txt';\n\\$newFile = fopen(\\$file, \"w+\") or die(\"Unable to open file!\");\nfwrite(\\$newFile, print_r((@\\$request), true));\nfclose(\\$newFile);\n"
+			"\\$file = \"logs/\\$fileName\" . \"_\" . time() . \".txt\";\n\\$newFile = fopen(\\$file, \"w+\") or die(\"Unable to open file!\");\nfwrite(\\$newFile, print_r((@\\$request), true));\nfclose(\\$newFile);\ndie;"
 		],
 		"description": "Generate a log file"
 	},
@@ -44,16 +51,36 @@
 	"MySQL Fetch Assoc": {
 		"prefix": "p_assoc",
 		"body": [
-			"\\$sql = \"SELECT * FROM `` WHERE `` = ''\";\n\n\\$no_of_rows_ = mysqli_num_rows(\\$sql);\nif (\\$no_of_rows_ > 0) {\n\twhile (\\$rows = mysqli_fetch_assoc(\\$sql)) {\n\t\t\n\t}\n}"
+			"\\$sql = mysqli_query(\\$conn, \"SELECT * FROM `` WHERE `` = ''\");\nif (mysqli_num_rows(\\$sql) > 0) {\n\twhile (\\$rows = mysqli_fetch_assoc(\\$sql)) {\n\t\t\n\t}\n}"
 		],
 		"description": "MySQLi Fetch Assoc Snippet"
+	},
+	"Set & Not Empty": {
+		"prefix": "p_isset",
+		"body": [
+			"if (isset(\\$$0) && empty(\\$$0) == false) {\n\t\n}"
+		],
+		"description": "isset and not empty Snippet"
+	},
+	"OAuth 2.0 Headers": {
+		"prefix": "hub_oauth",
+		"body": [
+			"\\$customHeaders = [\n\t\"Authorization: Bearer \\$accessToken\",\n\t\"Content-type: application/json\"\n];"
+		],
+		"description": "OAuth 2.0 headers snippet"
+	},
+	"Function Retry": {
+		"prefix": "p_retry",
+		"body": [
+			"if (in_array(\\$httpCode, \\$successCodes) == false && \\$try < 4) {\n\t\\$try++;\n\tsleep(3);\n\t// call function\n} else {\n\t\\$responseArr = json_decode(\\$response, true);\n}"
+		],
+		"description": "retry logic with recursion"
 	},
 	"cURL": {
 		"prefix": "p_curl",
 		"body": [
-			"\\$method = \"\";\n\n\\$payload = \"\";\n\n\\$endpoint = \"\";\n\n\\$headers = [\"Content-Type: application/json\", \"Authorization: Bearer \\$accessToken\"];\n\n\\$curl = curl_init();\ncurl_setopt(\\$curl, CURLOPT_URL, \\$endpoint);\ncurl_setopt(\\$curl, CURLOPT_HTTP_VERSION, \"CURL_HTTP_VERSION_1_1\");\ncurl_setopt(\\$curl, CURLOPT_HTTPHEADER, \\$headers);\ncurl_setopt(\\$curl, CURLOPT_ENCODING, \"\");\ncurl_setopt(\\$curl, CURLOPT_TIMEOUT, 45);\ncurl_setopt(\\$curl, CURLOPT_CUSTOMREQUEST, \\$method);\ncurl_setopt(\\$curl, CURLOPT_POSTFIELDS, \\$payload);\ncurl_setopt(\\$curl, CURLOPT_RETURNTRANSFER, true);\n\\$curlResponse = curl_exec(\\$curl);\n\\$httpCode = curl_getinfo(\\$curl, CURLINFO_RESPONSE_CODE);\n\\$curlResult = json_decode(\\$curlResponse, true);\ncurl_close(\\$curl)\n;"
+			"\\$method = \"\";\n\n\\$payload = \"\";\n\n\\$endpoint = \"\";\n\n\\$headers = [\"Content-Type: application/json\", \"Authorization: Bearer \\$accessToken\"];\n\n\\$curl = curl_init();\ncurl_setopt(\\$curl, CURLOPT_URL, \\$endpoint);\ncurl_setopt(\\$curl, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);\ncurl_setopt(\\$curl, CURLOPT_HTTPHEADER, \\$headers);\ncurl_setopt(\\$curl, CURLOPT_ENCODING, \"\");\ncurl_setopt(\\$curl, CURLOPT_TIMEOUT, 45);\ncurl_setopt(\\$curl, CURLOPT_CUSTOMREQUEST, \\$method);\ncurl_setopt(\\$curl, CURLOPT_POSTFIELDS, \\$payload);\ncurl_setopt(\\$curl, CURLOPT_RETURNTRANSFER, true);\n\\$response = curl_exec(\\$curl);\n\\$httpCode = curl_getinfo(\\$curl, CURLINFO_RESPONSE_CODE);\n\\$responseArr = json_decode(\\$response, true);\ncurl_close(\\$curl);\n"
 		],
 		"description": "PHP cURL"
 	}
-	// Place your snippets for php here. Each snippet is defined under a snippet name and has a prefix, body and description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are: $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the same ids are connected.
 }
