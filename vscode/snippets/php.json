@@ -27,6 +27,13 @@
 		],
 		"description": "Get Webhook Content"
 	},
+	"Random String": {
+		"prefix": "p_rand",
+		"body": [
+			"bin2hex(random_bytes(3))"
+		],
+		"description": "Generate a random string of 3 bytes (6 characters)"
+	},
 	"File Name": {
 		"prefix": "p_filename",
 		"body": [
@@ -45,6 +52,13 @@
 		"prefix": "p_err",
 		"body": [
 			"ini_set(\"display_errors\", 1);\n"
+		],
+		"description": ""
+	},
+	"Change Collation of Array of Tables": {
+		"prefix": "p_tbl_collate",
+		"body": [
+			"\\$arr = [];\nforeach (\\$arr as \\$table) {\n\tmysqli_query(\\$conn, \"ALTER TABLE `\\$table` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci\");\n}"
 		],
 		"description": ""
 	},
