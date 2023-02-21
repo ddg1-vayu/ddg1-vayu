@@ -1,0 +1,16 @@
+{
+	"DB Timezone": {
+		"prefix": "db_tz",
+		"body": [
+			"SELECT IF(@@session.time_zone = 'SYSTEM', @@system_time_zone, @@session.time_zone);"
+		],
+		"description": "Get the current timezone of MySQL"
+	},
+	"Table Schema": {
+		"prefix": "db_schema",
+		"body": [
+			"SELECT sch.TABLE_NAME, sch.COLUMN_NAME, sch.COLUMN_TYPE, sch.COLUMN_COMMENT FROM `INFORMATION_SCHEMA`.`COLUMNS` AS sch WHERE `TABLE_SCHEMA` = '' ORDER BY sch.TABLE_NAME ASC;"
+		],
+		"description": "Retrieve the schema of Tables of a Database"
+	}
+}

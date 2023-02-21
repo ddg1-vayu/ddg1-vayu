@@ -1,0 +1,7 @@
+{
+	"j_currency": {
+		"prefix": "j_currency",
+		"body": "function showCurrency(value, locale = \"en-IN\", currency = \"INR\") {\n\treturn value.toLocaleString(locale, { style: \"currency\", currency: currency});\n}",
+		"description": "Show integer as Currency"
+	}
+}
