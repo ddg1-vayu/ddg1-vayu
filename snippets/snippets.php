@@ -22,31 +22,43 @@ echo $output;
 
 
 // generate a string with the format “September 26th to October 4th 2022” from start and end dates in PHP with try & catch
-function formatDateRange($start_date, $end_date) {
-  // Use a try-catch block to handle any exceptions
+function generate_date_string($start_date, $end_date) {
+  // Use try block to execute the code
   try {
-    // Create a DateTime object for the start date and another one for the end date
-    $start = new DateTime($start_date);
-    $end = new DateTime($end_date);
+    // Create start and end date objects
+    $start_date = new DateTime($start_date);
+    $end_date = new DateTime($end_date);
 
-    // Format the start date according to your desired output
-    $output = $start->format("F jS"); // September 26th
+    // Get the difference between the years of the dates
+    $year_diff = date_diff($start_date, $end_date)->y;
 
-    // Check if the start date and the end date have different months
-    if ($start->format("m") != $end->format("m")) {
-      // Different months
-      // Append "to" and the end date with full month name
-      $output .= " to " . $end->format("F jS Y"); // September 26th to October 4th 2022
+    // Check if the year difference is zero
+    if ($year_diff == 0) {
+      // Format the start date without year
+      $start_date_formatted = date_format($start_date, 'F jS');
     } else {
-      // Same month
-      // Append "-" and the end date with only day name
-      $output .= " - " . $end->format("jS Y"); // September 26th - 30th 2022
+      // Format the start date with year
+      $start_date_formatted = date_format($start_date, 'F jS, Y');
     }
 
-    // Return the output
-    return $output;
-  } catch (Exception $e) {
-    // Handle any exceptions that may occur
-    return "Error: " . $e->getMessage();
+    // Format the end date with year
+    $end_date_formatted = date_format($end_date, 'F jS, Y');
+
+    // Concatenate the formatted dates
+    $date_string = $start_date_formatted . " to " . $end_date_formatted;
+
+    // Return result
+    return $date_string;
+  }
+  // Use catch block to handle any errors that may occur
+  catch (Exception $e) {
+    // Throw a custom exception with a message
+    throw new Exception("Invalid input: " . $e->getMessage());
+  }
+  // Use finally block to perform some cleanup actions
+  finally {
+    // Free up memory by destroying date objects
+    unset($start_date);
+    unset($end_date);
   }
 }
