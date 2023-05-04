@@ -1,19 +1,25 @@
 {
 	"clock.alignment": "Right",
-	"clock.format": "dddd | mmm dd | hh:MM:ss TT",
+	"clock.format": "dddd | dd mmm yyyy | hh:MM:ss TT",
 	"code-runner.executorMap": {
-		"php": "C:\\xampp\\php\\php.exe",
-		"python": "python"
+		"html": "C://Progra~1//Google//Chrome//Application//chrome.exe",
+		"php": "C:/xampp/php/php.exe",
+		"python": "C://Progra~1//Python311//python.exe",
+		"javascript": "node"
 	},
+	"code-runner.showRunCommandInExplorerContextMenu": false,
 	"colorize.languages": [
 		"css",
 		"html",
 		"javascript",
 		"jsonc",
-		"json"
+		"json",
+		"php"
 	],
 	"cSpell.allowCompoundWords": true,
 	"cSpell.enableFiletypes": [
+		"!jsonc",
+		"!plaintext",
 		"xml"
 	],
 	"cSpell.language": "en",
@@ -25,6 +31,7 @@
 		"Demio",
 		"Dugar",
 		"hbspt",
+		"hsapi",
 		"hubspotutk",
 		"kaleyra",
 		"Kolkata",
@@ -32,12 +39,15 @@
 		"rediffmail",
 		"Vayu"
 	],
+	"editor.accessibilitySupport": "off",
 	"editor.bracketPairColorization.enabled": true,
+	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
 	"editor.cursorBlinking": "smooth",
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.find.addExtraSpaceOnTop": false,
-	"editor.fontFamily": "Fira Code iScript",
-	"editor.fontLigatures": "'zero', 'ss02', 'ss03', 'ss04', 'ss05', 'calt'",
+	// "editor.fontFamily": "Fira Code iScript",
+	"editor.fontFamily": "Fantasque Sans Mono",
+	"editor.fontLigatures": "'zero', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'calt'",
 	"editor.fontSize": 16,
 	"editor.formatOnType": true,
 	"editor.guides.bracketPairs": "active",
@@ -51,9 +61,10 @@
 	"editor.minimap.renderCharacters": false,
 	"editor.renderWhitespace": "none",
 	"editor.scrollBeyondLastLine": false,
-	"editor.stickyScroll.enabled": true,
+	"editor.snippetSuggestions": "inline",
 	"editor.stickyScroll.maxLineCount": 4,
 	"editor.suggestSelection": "first",
+	"editor.tabCompletion": "onlySnippets",
 	"editor.tabSize": 2,
 	"editor.tokenColorCustomizations": {
 		"[Dark Mint]": {
@@ -142,7 +153,8 @@
 						"keyword.operator.logical",
 						"keyword.other.sql",
 						"keyword.other.alias.sql",
-						"keyword.other.DDL.create.II.sql"
+						"keyword.other.DDL.create.II.sql",
+						"keyword.other.data-integrity.sql"
 					],
 					"settings": {
 						"fontStyle": "bold",
@@ -181,7 +193,8 @@
 						"support.type.python",
 						"entity.name.function.python",
 						"support.function.libxml.php",
-						"support.function.simplexml.php"
+						"support.function.simplexml.php",
+						"support.function.url.css"
 					],
 					"settings": {
 						"fontStyle": "bold",
@@ -360,6 +373,281 @@
 				}
 			]
 		},
+		"[SynthWave '84]": {
+			"textMateRules": [
+				{
+					"scope": [
+						"invalid",
+						"keyword.operator",
+						"constant.numeric.css",
+						"keyword.other.unit.px.css",
+						"constant.numeric.decimal.js"
+					],
+					"settings": {
+						"fontStyle": ""
+					}
+				},
+				{
+					"scope": [
+						"constant.numeric",
+						"constant.numeric.css",
+						"entity.name.function.js",
+						"entity.name.function.php",
+						"entity.name.function.python",
+						"entity.name.tag.css",
+						"keyword.control.die.php",
+						"keyword.control.exit.php",
+						"keyword.control.for.php",
+						"keyword.control.import.include.php",
+						"keyword.control.switch.php",
+						"keyword.control.while.php",
+						"keyword.operator.arithmetic",
+						"keyword.operator.arithmetic.php",
+						"keyword.operator.assignment",
+						"keyword.operator.comparison",
+						"keyword.operator.error-control.php",
+						"keyword.operator.key.php",
+						"keyword.operator.logical",
+						"keyword.other.DDL.create.II.sql",
+						"keyword.other.DML.sql",
+						"keyword.other.alias.sql",
+						"keyword.other.create.sql",
+						"keyword.other.data-integrity.sql",
+						"keyword.other.order.sql",
+						"keyword.other.sql",
+						"keyword.other.table.sql",
+						"meta.function-call.generic.python",
+						"meta.object-literal.key.js",
+						"storage.modifier.php",
+						"storage.type.function.js",
+						"storage.type.js",
+						"support.function.array.php",
+						"support.function.basic_functions.php",
+						"support.function.builtin.python",
+						"support.function.construct.output.php",
+						"support.function.construct.php",
+						"support.function.conversion.sql",
+						"support.function.curl.php",
+						"support.function.datetime.php",
+						"support.function.dir.php",
+						"support.function.file.php",
+						"support.function.filter.php",
+						"support.function.hash.php",
+						"support.function.info.php",
+						"support.function.json.php",
+						"support.function.math.php",
+						"support.function.mbstring.php",
+						"support.function.mysqli.php",
+						"support.function.network.php",
+						"support.function.output.php",
+						"support.function.password.php",
+						"support.function.php_apache.php",
+						"support.function.php_pcre.php",
+						"support.function.session.php",
+						"support.function.string.php",
+						"support.function.url.php",
+						"support.function.var.php",
+						"support.function.xml.php",
+						"support.type.property-name.json.comments",
+						"variable.parameter.misc.css"
+					],
+					"settings": {
+						"fontStyle": "bold"
+					}
+				},
+				{
+					"scope": [
+						"entity.name.type.class",
+						"keyword",
+						"constant",
+						"storage.modifier",
+						"storage.type.class.js",
+						"entity.name.method.js",
+						"entity.name.class.js",
+						"entity.name.tag.doctype",
+						"entity.other.attribute-name",
+						"entity.other.attribute-name.tag.jade",
+						"entity.other.attribute-name.tag.pug",
+						"string.quoted.single",
+						"string.quoted.double",
+						"string.quoted.other.backtick",
+						"source.sql.embedded.php",
+						"keyword.other.unit.px.css",
+						"keyword.other.unit.em.css",
+						"keyword.other.unit.rem.css"
+					],
+					"settings": {
+						"fontStyle": "italic"
+					}
+				},
+				{
+					"scope": [
+						"comment.block.html",
+						"comment.block.php",
+						"comment.line.double-slash.js",
+						"comment.line.double-slash.php",
+						"constant.language.boolean.false.js",
+						"constant.language.boolean.true.js",
+						"constant.language.php",
+						"constant.other.color",
+						"constant.other.php",
+						"entity.name.tag.html",
+						"entity.name.tag.wildcard.css",
+						"entity.other.attribute-name.class.css",
+						"entity.other.attribute-name.pseudo-class.css",
+						"entity.other.attribute-name.pseudo-element.css",
+						"keyword.control.at-rule.import.css",
+						"keyword.control.at-rule.media.css",
+						"keyword.control.break.php",
+						"keyword.control.case.php",
+						"keyword.control.conditional.js",
+						"keyword.control.continue.php",
+						"keyword.control.default.php",
+						"keyword.control.else.php",
+						"keyword.control.elseif.php",
+						"keyword.control.exception.catch.php",
+						"keyword.control.exception.php",
+						"keyword.control.flow.js",
+						"keyword.control.flow.python",
+						"keyword.control.foreach.php",
+						"keyword.control.if.php",
+						"keyword.control.import.python",
+						"keyword.control.loop.js",
+						"keyword.control.return.php",
+						"keyword.control.switch.js",
+						"keyword.other.function.use.php",
+						"keyword.other.unit.em.css",
+						"keyword.other.unit.percentage.css",
+						"keyword.other.unit.px.css",
+						"keyword.other.unit.rem.css",
+						"keyword.other.unit.s.css",
+						"keyword.other.unit.vh.css",
+						"keyword.other.unit.vw.css",
+						"punctuation.definition.comment.php",
+						"storage.type.function.php",
+						"storage.type.function.python",
+						"support.constant.ext.php",
+						"support.constant.property-value.css",
+						"support.constant.std.php",
+						"support.function.gradient.css",
+						"support.type.property-name.media.css",
+						"variable.language.this",
+						"variable.other.object.js",
+						"variable.other.readwrite.js",
+						"variable.parameter",
+						"variable.parameter.js",
+					],
+					"settings": {
+						"fontStyle": "bold italic"
+					}
+				},
+				{
+					"scope": [
+						"string.quoted.single",
+						"string.quoted.double",
+						"string.quoted.other.backtick",
+						"source.sql.embedded.php"
+					],
+					"settings": {
+						"foreground": "#ffffff"
+					}
+				},
+				{
+					"scope": [
+						"punctuation.definition.string.begin.css",
+						"punctuation.definition.string.end.css",
+						"punctuation.definition.string.begin.js",
+						"punctuation.definition.string.end.js",
+						"punctuation.definition.string.begin.json",
+						"punctuation.definition.string.end.json",
+						"punctuation.definition.string.begin.html",
+						"punctuation.definition.string.end.html",
+						"punctuation.definition.string.begin.php",
+						"punctuation.definition.string.end.php",
+						"constant.language",
+						"meta.object-literal.key.js",
+						"support.type.property-name.css",
+						"string.quoted.other.backtick.sql",
+						"constant.other.database-name.sql"
+					],
+					"settings": {
+						"foreground": "#2EE2FA"
+					}
+				},
+				{
+					"scope": [
+						"support.type.property-name.json.comments",
+						"constant.other.table-name.sql"
+					],
+					"settings": {
+						"foreground": "#ffcc00"
+					}
+				},
+				{
+					"scope": [
+						"keyword.operator.comparison",
+						"keyword.operator.assignment",
+						"keyword.operator.arithmetic",
+						"keyword.operator.arithmetic.php",
+						"keyword.operator.key.php",
+						"keyword.operator.error-control.php",
+						"variable.parameter.misc.css"
+					],
+					"settings": {
+						"foreground": "#DC143C"
+					}
+				},
+				{
+					"scope": [
+						"variable.other.php",
+						"variable.other.readwrite",
+						"variable.other.readwrite.js",
+						"variable.other.object.js",
+						"constant.language.boolean.false.js",
+						"constant.language.boolean.true.js",
+						"variable.language.this.js",
+						"variable.parameter.js"
+					],
+					"settings": {
+						"foreground": "#01d132"
+					}
+				},
+				{
+					"scope": [
+						"constant.language.php"
+					],
+					"settings": {
+						"foreground": "#FE4450"
+					}
+				},
+				{
+					"scope": [
+						"constant.numeric.css",
+						"constant.numeric",
+						"constant.numeric.decimal.js"
+					],
+					"settings": {
+						"foreground": "#ff0000"
+					}
+				},
+				{
+					"scope": [
+						"constant.other.php",
+						"entity.name.namespace",
+						"keyword.other.unit.s.css",
+						"keyword.other.unit.vw.css",
+						"keyword.other.unit.vh.css",
+						"keyword.other.unit.percentage.css",
+						"keyword.other.unit.px.css",
+						"keyword.other.unit.rem.css",
+						"keyword.other.unit.em.css"
+					],
+					"settings": {
+						"foreground": "#ffcc00"
+					}
+				}
+			]
+		}
 	},
 	"editor.unicodeHighlight.allowedCharacters": {
 		"’": true,
@@ -372,37 +660,79 @@
 	"explorer.decorations.badges": true,
 	"files.autoSave": "onFocusChange",
 	"files.trimFinalNewlines": true,
+	"git.path": "C:\\Program Files\\Git\\bin\\git.exe",
 	"html.format.indentHandlebars": true,
 	"html.format.indentInnerHtml": true,
+	"intelephense.environment.shortOpenTag": false,
 	"json.format.enable": true,
+	"livePreview.notifyOnOpenLooseFile": false,
 	"liveServer.settings.CustomBrowser": "microsoft-edge",
+	"liveServer.settings.NoBrowser": true,
 	"liveServer.settings.donotShowInfoMsg": true,
 	"liveServer.settings.donotVerifyTags": true,
-	"liveServer.settings.NoBrowser": true,
-	"liveServer.settings.useWebExt": true,
-	"liveshare.presence": true,
-	"material-icon-theme.folders.color": "#01d1d1",
+	"liveServer.settings.useWebExt": false,
+	"liveshare.launcherClient": "visualStudioCode",
+	"material-icon-theme.folders.color": "#7cb342",
 	"material-icon-theme.opacity": 1,
 	"material-icon-theme.saturation": 1,
 	"path-intellisense.autoSlashAfterDirectory": true,
 	"path-intellisense.extensionOnImport": true,
-	"prettier.useTabs": true,
-	"php.validate.executablePath": "C:/xampp/php/php.exe",
 	"php.debug.executablePath": "C:/xampp/php/php.exe",
+	"php.validate.executablePath": "C:/xampp/php/php.exe",
+	"prettier.useTabs": true,
+	"python.analysis.typeCheckingMode": "basic",
+	"python.formatting.provider": "black",
 	"security.workspace.trust.untrustedFiles": "open",
+	"settingsSync.ignoredExtensions": [
+		"vizzuhq.code-viz-stat",
+		"icrawl.discord-vscode",
+		"ms-python.isort",
+		"ms-python.vscode-pylance",
+		"ms-python.python",
+		"uctakeoff.vscode-counter",
+		"adamhartford.vscode-base64",
+		"mhutchie.git-graph"
+	],
 	"terminal.integrated.cursorStyle": "line",
 	"terminal.integrated.defaultProfile.windows": "Command Prompt",
-	"thunder-client.editorFontSize": 12,
+	"thunder-client.editorFontSize": 14,
 	"thunder-client.responseLimit": 20,
 	"vscode-edge-devtools.webhint": false,
 	"window.commandCenter": true,
-	"workbench.colorTheme": "Dark Mint",
+	"workbench.colorCustomizations": {
+		"terminal.ansiBlack": "#000000",
+		"terminal.ansiBlue": "#0066FF",
+		"terminal.ansiBrightBlack": "#808080",
+		"terminal.ansiBrightBlue": "#0066FF",
+		"terminal.ansiBrightCyan": "#00FFFF",
+		"terminal.ansiBrightGreen": "#33FF00",
+		"terminal.ansiBrightMagenta": "#CC00FF",
+		"terminal.ansiBrightRed": "#FF0000",
+		"terminal.ansiBrightWhite": "#FFFFFF",
+		"terminal.ansiBrightYellow": "#FF0099",
+		"terminal.ansiCyan": "#00FFFF",
+		"terminal.ansiGreen": "#33FF00",
+		"terminal.ansiMagenta": "#CC00FF",
+		"terminal.ansiRed": "#FF0000",
+		"terminal.ansiWhite": "#D0D0D0",
+		"terminal.ansiYellow": "#FF0099",
+		"terminal.foreground": "#2EE2FA",
+		"terminalCursor.background": "#ffffff",
+		"terminalCursor.foreground": "#ffffff",
+	},
+	"workbench.colorTheme": "SynthWave '84",
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.productIconTheme": "fluent-icons",
 	"workbench.startupEditor": "none",
 	"workbench.tree.renderIndentGuides": "always",
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
 	"[html]": {
 		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"[json]": {
 		"editor.defaultFormatter": "vscode.json-language-features"
@@ -414,12 +744,16 @@
 		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
 	},
 	"[python]": {
-		"editor.defaultFormatter": "ms-python.python"
+		"editor.defaultFormatter": "ms-python.python",
+		"editor.insertSpaces": true,
+		"editor.tabSize": 4,
+		"editor.formatOnType": true,
 	},
 	"[sql]": {
 		"editor.defaultFormatter": "mtxr.sqltools"
 	},
 	"[xml]": {
 		"editor.defaultFormatter": "DotJoshJohnson.xml"
-	}
+	},
+	"terminal.integrated.fontSize": 16
 }
