@@ -5,7 +5,7 @@
 
 <p align="left"> <a href="https://twitter.com/vayudugar" target="blank"><img src="https://img.shields.io/twitter/follow/vayudugar?logo=twitter&style=for-the-badge" alt="vayudugar" /></a> </p>
 
-- 💬 Ask me about **PHP, jQuery, Bootstrap and CSS**
+- 💬 Ask me about **HubSpot, PHP, jQuery, Bootstrap and CSS**
 
 - 📫 Reach me @ **vayu.dugar21@gmail.com**
 
