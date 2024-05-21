@@ -15,15 +15,15 @@
 <!--START_SECTION:waka-->
 
 ```txt
-From: 16 September 2017 - To: 19 May 2024
+From: 16 September 2017 - To: 20 May 2024
 
-Total Time: 2,959 hrs 22 mins
+Total Time: 2,961 hrs 46 mins
 
-PHP              1,922 hrs 21 mins>>>>>>>>>>>>>>>>---------   64.96 %
-CSS              340 hrs 51 mins >>>----------------------   11.52 %
-JavaScript       195 hrs 37 mins >>-----------------------   06.61 %
-Other            159 hrs 7 mins  >------------------------   05.38 %
-HTML             143 hrs 44 mins >------------------------   04.86 %
+PHP              1,922 hrs 22 mins>>>>>>>>>>>>>>>>---------   64.91 %
+CSS              340 hrs 51 mins >>>----------------------   11.51 %
+JavaScript       195 hrs 37 mins >>-----------------------   06.60 %
+Other            161 hrs 15 mins >------------------------   05.44 %
+HTML             143 hrs 44 mins >------------------------   04.85 %
 ```
 
 <!--END_SECTION:waka-->
