@@ -1,34 +1,80 @@
 {
-	"clock.alignment": "Right",
-	"clock.format": "dddd | dd mmm yyyy | hh:MM:ss TT",
-	"code-runner.executorMap": {
-		"html": "C://Progra~1//Google//Chrome//Application//chrome.exe",
-		"php": "C:/xampp/php/php.exe",
-		"python": "C://Progra~1//Python311//python.exe",
-		"javascript": "node"
+	"[blade]": {
+		"editor.defaultFormatter": "shufo.vscode-blade-formatter",
+		"editor.insertSpaces": false,
 	},
-	"code-runner.showRunCommandInExplorerContextMenu": false,
-	"colorize.languages": [
-		"css",
-		"html",
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.insertSpaces": false,
+	},
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features",
+		"editor.insertSpaces": false,
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.insertSpaces": false,
+	},
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features",
+		"editor.insertSpaces": false,
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features",
+		"editor.insertSpaces": false,
+	},
+	"[php]": {
+		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+		"editor.insertSpaces": false,
+		"editor.tabSize": 2
+	},
+	"[python]": {
+		// "editor.defaultFormatter": "ms-python.black-formatter",
+		"editor.formatOnSave": true,
+		"editor.formatOnType": true,
+		"editor.insertSpaces": true,
+		"editor.tabSize": 4
+	},
+	"[sql]": {
+		"editor.defaultFormatter": "dbcode.dbcode"
+	},
+	"[xml]": {
+		"editor.defaultFormatter": "DotJoshJohnson.xml"
+	},
+	"auto-close-tag.activationOnLanguage": [
+		"xml",
+		"php",
+		"blade",
+		"ejs",
+		"jinja",
 		"javascript",
-		"jsonc",
-		"json",
-		"php"
+		"javascriptreact",
+		"typescript",
+		"typescriptreact",
+		"plaintext",
+		"markdown",
+		"vue",
+		"liquid",
+		"erb",
+		"lang-cfml",
+		"cfml",
+		"HTML (EEx)",
+		"HTML (Eex)",
+		"plist"
 	],
 	"cSpell.allowCompoundWords": true,
-	"cSpell.enableFiletypes": [
-		"!jsonc",
-		"!plaintext",
-		"xml"
-	],
-	"cSpell.language": "en",
+	"cSpell.enabledFileTypes": {
+		"*": true,
+		"jsonc": false,
+		"xml": false
+	},
 	"cSpell.ignoreWords": [
 		"undislike"
 	],
+	"cSpell.language": "en",
 	"cSpell.userWords": [
 		"behavioural",
-		"Demio",
+		"dotenv",
 		"Dugar",
 		"hbspt",
 		"hsapi",
@@ -39,14 +85,34 @@
 		"rediffmail",
 		"Vayu"
 	],
+	"clock.alignment": "Right",
+	// "clock.format": "dddd | dd mmm yyyy | hh:MM:ss TT",
+	"clock.format": "dddd | dd mmm yyyy",
+	"code-runner.executorMap": {
+		"php": "C:/xampp/php/php.exe",
+		"python": "C://Progra~1//Python312//python.exe",
+		"javascript": "node"
+	},
+	"code-runner.showRunCommandInExplorerContextMenu": false,
+	"colorize.languages": [
+		"css",
+		"html",
+		"javascript",
+		"json",
+		"jsonc",
+		"php"
+	],
+	"diffEditor.experimental.showMoves": true,
+	"diffEditor.ignoreTrimWhitespace": true,
+	"diffEditor.maxComputationTime": 0,
 	"editor.accessibilitySupport": "off",
 	"editor.bracketPairColorization.enabled": true,
 	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
 	"editor.cursorBlinking": "smooth",
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.find.addExtraSpaceOnTop": false,
-	// "editor.fontFamily": "Fira Code iScript",
 	"editor.fontFamily": "Fantasque Sans Mono",
+	// "editor.fontFamily": "Inter Tight", //Fira Code iScript || Fantasque Sans Mono
 	"editor.fontLigatures": "'zero', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'calt'",
 	"editor.fontSize": 16,
 	"editor.formatOnType": true,
@@ -62,13 +128,172 @@
 	"editor.renderWhitespace": "none",
 	"editor.scrollBeyondLastLine": false,
 	"editor.snippetSuggestions": "inline",
+	"editor.stickyScroll.enabled": false,
 	"editor.stickyScroll.maxLineCount": 4,
 	"editor.suggestSelection": "first",
 	"editor.tabCompletion": "onlySnippets",
 	"editor.tabSize": 2,
 	"editor.tokenColorCustomizations": {
+		"[AMOLED Github Theme]": {
+			"textMateRules": [
+				{
+					"scope": [
+						"variable.other.php"
+					],
+					"settings": {
+						"foreground": "#33FF00"
+					}
+				},
+				{
+					"scope": [
+						"string.quoted.single",
+						"string.quoted.double",
+						"string.quoted.other.backtick",
+						"source.sql.embedded.php"
+					],
+					"settings": {
+						"foreground": "#fff",
+					}
+				},
+				{
+					"scope": [
+						"constant.language",
+						"meta.property-name.css",
+						"string.quoted.other.backtick.sql"
+					],
+					"settings": {
+						"foreground": "#40E0D0"
+					}
+				},
+				{
+					"scope": [
+						"variable.other.readwrite.js",
+						"variable.other.constant.js",
+						"variable.other.object.js",
+						"constant.language.boolean.false.js",
+						"constant.language.boolean.true.js",
+						"variable.language.this.js"
+					],
+					"settings": {
+						"fontStyle": "italic bold",
+						"foreground": "#01d1d1"
+					}
+				},
+				{
+					"scope": [
+						"constant.other.database-name.sql"
+					],
+					"settings": {
+						"foreground": "#00B894",
+					}
+				},
+				{
+					"scope": [
+						"constant.other.table-name.sql"
+					],
+					"settings": {
+						"foreground": "#ffd700",
+					}
+				},
+				{
+					"scope": [
+						"support.constant.std.php",
+						"support.constant.ext.php"
+					],
+					"settings": {
+						"foreground": "#ffcc00",
+						"fontStyle": "italic bold"
+					}
+				},
+				{
+					"scope": [
+						"variable.other.global.php",
+						"variable.other.global.safer.php",
+					],
+					"settings": {
+						"foreground": "#00ffff",
+					}
+				},
+			]
+		},
 		"[Dark Mint]": {
 			"textMateRules": [
+				{
+					"scope": [
+						"invalid",
+						"keyword.operator",
+						"constant.numeric.css",
+						"keyword.other.unit.px.css",
+						"constant.numeric.decimal.js",
+					],
+					"settings": {
+						"fontStyle": ""
+					}
+				},
+				{
+					"scope": [
+						"entity.name.function.js",
+						"entity.name.function.php",
+						"entity.name.function.python",
+						"keyword.operator.arithmetic",
+						"keyword.operator.arithmetic.php",
+						"keyword.operator.assignment",
+						"keyword.operator.comparison",
+						"keyword.operator.error-control.php",
+						"keyword.operator.key.php",
+						"keyword.operator.logical",
+						"keyword.other.DDL.create.II.sql",
+						"keyword.other.DML.sql",
+						"keyword.other.alias.sql",
+						"keyword.other.data-integrity.sql",
+						"keyword.other.new.php",
+						"keyword.other.order.sql",
+						"keyword.other.sql",
+						"keyword.other.use.php",
+						"meta.function-call.generic.python",
+						"support.function.array.php",
+						"support.function.basic_functions.php",
+						"support.function.builtin.python",
+						"support.function.construct.output.php",
+						"support.function.construct.php",
+						"support.function.curl.php",
+						"support.function.datetime.php",
+						"support.function.datetime.sql",
+						"support.function.dir.php",
+						"support.function.errorfunc.php",
+						"support.function.file.php",
+						"support.function.filter.php",
+						"support.function.funchand.php",
+						"support.function.hash.php",
+						"support.function.info.php",
+						"support.function.json.php",
+						"support.function.libxml.php",
+						"support.function.math.php",
+						"support.function.mbstring.php",
+						"support.function.mysqli.php",
+						"support.function.network.php",
+						"support.function.openssl.php",
+						"support.function.password.php",
+						"support.function.php_apache.php",
+						"support.function.php_pcre.php",
+						"support.function.session.php",
+						"support.function.simplexml.php",
+						"support.function.streamsfuncs.php",
+						"support.function.string.php",
+						"support.function.url.css",
+						"support.function.url.php",
+						"support.function.var.php",
+						"support.function.xml.php",
+						"support.type.python",
+						"support.type.property-name.json.comments",
+						"constant.numeric",
+						"constant.numeric.css",
+						"entity.name.tag.html",
+					],
+					"settings": {
+						"fontStyle": "bold"
+					}
+				},
 				{
 					"scope": [
 						"comment",
@@ -90,14 +315,28 @@
 				},
 				{
 					"scope": [
-						"invalid",
-						"keyword.operator",
-						"constant.numeric.css",
+						"comment.block.html",
+						"comment.block.php",
+						"comment.block.xml",
+						"comment.line.double-slash",
+						"constant.language.boolean.false.js",
+						"constant.language.boolean.true.js",
+						"constant.other.php",
+						"entity.other.attribute-name.html",
+						"keyword.other.unit.em.css",
 						"keyword.other.unit.px.css",
-						"constant.numeric.decimal.js",
+						"keyword.other.unit.rem.css",
+						"meta.property-value.css",
+						"support.constant.ext.php",
+						"support.constant.font-name.css",
+						"support.constant.std.php",
+						"variable.language.this.js",
+						"variable.other.constant.js",
+						"variable.other.object.js",
+						"variable.other.readwrite.js",
 					],
 					"settings": {
-						"fontStyle": ""
+						"fontStyle": "italic bold"
 					}
 				},
 				{
@@ -113,37 +352,10 @@
 				},
 				{
 					"scope": [
-						"comment.block.xml"
-					],
-					"settings": {
-						"fontStyle": "italic bold"
-					}
-				},
-				{
-					"scope": [
-						"meta.property-value.css",
-						"support.constant.font-name.css"
-					],
-					"settings": {
-						"fontStyle": "italic bold"
-					}
-				},
-				{
-					"scope": [
 						"constant.language"
 					],
 					"settings": {
 						"foreground": "#40E0D0"
-					}
-				},
-				{
-					"scope": [
-						"keyword.other.unit.px.css",
-						"keyword.other.unit.rem.css",
-						"keyword.other.unit.em.css"
-					],
-					"settings": {
-						"fontStyle": "italic bold"
 					}
 				},
 				{
@@ -157,47 +369,50 @@
 						"keyword.other.data-integrity.sql"
 					],
 					"settings": {
-						"fontStyle": "bold",
 						"foreground": "#C71585"
 					}
 				},
 				{
 					"scope": [
-						"support.function.curl.php",
-						"support.function.json.php",
-						"support.function.var.php",
-						"support.function.url.php",
-						"support.function.info.php",
-						"support.function.network.php",
-						"support.function.file.php",
-						"support.function.string.php",
-						"support.function.array.php",
-						"support.function.mysqli.php",
-						"support.function.math.php",
-						"support.function.xml.php",
-						"support.function.hash.php",
-						"support.function.datetime.php",
-						"support.function.construct.php",
-						"support.function.construct.output.php",
-						"support.function.basic_functions.php",
 						"entity.name.function.js",
 						"entity.name.function.php",
-						"support.function.streamsfuncs.php",
+						"entity.name.function.python",
+						"meta.function-call.generic.python",
+						"support.function.array.php",
+						"support.function.basic_functions.php",
+						"support.function.builtin.python",
+						"support.function.construct.output.php",
+						"support.function.construct.php",
+						"support.function.curl.php",
+						"support.function.datetime.php",
+						"support.function.datetime.sql",
+						"support.function.dir.php",
+						"support.function.file.php",
 						"support.function.filter.php",
+						"support.function.funchand.php",
+						"support.function.hash.php",
+						"support.function.info.php",
+						"support.function.json.php",
+						"support.function.libxml.php",
+						"support.function.math.php",
+						"support.function.mbstring.php",
+						"support.function.mysqli.php",
+						"support.function.network.php",
+						"support.function.openssl.php",
+						"support.function.password.php",
+						"support.function.php_apache.php",
 						"support.function.php_pcre.php",
 						"support.function.session.php",
-						"support.function.password.php",
-						"support.function.datetime.sql",
-						"support.function.builtin.python",
-						"meta.function-call.generic.python",
-						"support.type.python",
-						"entity.name.function.python",
-						"support.function.libxml.php",
 						"support.function.simplexml.php",
-						"support.function.url.css"
+						"support.function.streamsfuncs.php",
+						"support.function.string.php",
+						"support.function.url.css",
+						"support.function.url.php",
+						"support.function.var.php",
+						"support.function.xml.php",
+						"support.type.python"
 					],
 					"settings": {
-						"fontStyle": "bold",
 						"foreground": "#0066CC"
 					}
 				},
@@ -212,7 +427,6 @@
 					],
 					"settings": {
 						"foreground": "#DC143C",
-						"fontStyle": "bold"
 					}
 				},
 				{
@@ -222,7 +436,6 @@
 					],
 					"settings": {
 						"foreground": "#F368E0",
-						"fontStyle": "bold"
 					}
 				},
 				{
@@ -232,7 +445,6 @@
 						"comment.block.html"
 					],
 					"settings": {
-						"fontStyle": "italic bold",
 						"foreground": "#999"
 					}
 				},
@@ -256,36 +468,18 @@
 				},
 				{
 					"scope": [
-						"constant.other.php"
-					],
-					"settings": {
-						"fontStyle": "bold italic",
-					}
-				},
-				{
-					"scope": [
-						"support.type.property-name.json.comments"
-					],
-					"settings": {
-						"fontStyle": "bold",
-					}
-				},
-				{
-					"scope": [
 						"constant.numeric",
 						"constant.numeric.css"
 					],
 					"settings": {
 						"foreground": "#f00",
-						"fontStyle": "bold"
 					}
 				},
 				{
 					"scope": [
-						"entity.name.tag.html"
+						"entity.name.tag.html",
 					],
 					"settings": {
-						"fontStyle": "bold",
 						"foreground": "#9529c0"
 					}
 				},
@@ -299,7 +493,6 @@
 						"variable.language.this.js"
 					],
 					"settings": {
-						"fontStyle": "bold italic",
 						"foreground": "#01d1d1"
 					}
 				},
@@ -335,7 +528,6 @@
 					],
 					"settings": {
 						"foreground": "#ffcc00",
-						"fontStyle": "italic bold"
 					}
 				},
 				{
@@ -363,14 +555,6 @@
 						"foreground": "#00ffff",
 					}
 				},
-				{
-					"scope": [
-						"entity.other.attribute-name.html"
-					],
-					"settings": {
-						"fontStyle": "bold italic"
-					}
-				}
 			]
 		},
 		"[SynthWave '84]": {
@@ -439,6 +623,7 @@
 						"support.function.mbstring.php",
 						"support.function.mysqli.php",
 						"support.function.network.php",
+						"support.function.openssl.php",
 						"support.function.output.php",
 						"support.function.password.php",
 						"support.function.php_apache.php",
@@ -538,7 +723,7 @@
 						"variable.parameter.js",
 					],
 					"settings": {
-						"fontStyle": "bold italic"
+						"fontStyle": "italic bold"
 					}
 				},
 				{
@@ -653,25 +838,140 @@
 		"’": true,
 		"–": true
 	},
+	"dbcode.ai.inlineCompletion": false,
+	"dbcode.connections": [
+		{
+			"connectionId": "bcR2E5mMlgQOkhtc5eVL8",
+			"name": "Anyboat Staging",
+			"driver": "mariadb",
+			"color": "#00A6FF",
+			"connectionType": "host",
+			"host": "92.205.59.80",
+			"port": 3306,
+			"ssl": false,
+			"username": "anyboat_stg_user",
+			"password": "",
+			"savePassword": "secretStorage",
+			"database": "anyboat_stg",
+			"connectionTimeout": 30,
+			"driverOptions": {
+				"retrievePublickey": true
+			}
+		},
+		{
+			"connectionId": "74M8Se9XJOhYWAUaoC-K9",
+			"name": "WhatsApp Integration",
+			"driver": "mariadb",
+			"color": "#009670",
+			"connectionType": "host",
+			"host": "92.205.59.80",
+			"port": 3306,
+			"ssl": false,
+			"username": "whatsapp-integration",
+			"password": "",
+			"savePassword": "secretStorage",
+			"database": "whatsapp-integration",
+			"connectionTimeout": 30,
+			"driverOptions": {
+				"retrievePublickey": true
+			}
+		}
+	],
+	"dbcode.history.enabled": true,
+	"dbcode.maxRowsToFetch": 500,
+	"dbcode.warnBeforeExecuteFullDoc": false,
 	"editor.wordWrap": "on",
 	"editor.wordWrapColumn": 150,
 	"emmet.triggerExpansionOnTab": true,
 	"explorer.confirmDragAndDrop": false,
 	"explorer.decorations.badges": true,
+	"explorer.sortOrder": "type",
 	"files.autoSave": "onFocusChange",
 	"files.trimFinalNewlines": true,
 	"git.path": "C:\\Program Files\\Git\\bin\\git.exe",
 	"html.format.indentHandlebars": true,
 	"html.format.indentInnerHtml": true,
 	"intelephense.environment.shortOpenTag": false,
+	"intelephense.stubs": [
+		"apache",
+		"bcmath",
+		"bz2",
+		"calendar",
+		"com_dotnet",
+		"Core",
+		"ctype",
+		"curl",
+		"date",
+		"dba",
+		"dom",
+		"enchant",
+		"exif",
+		"FFI",
+		"fileinfo",
+		"filter",
+		"fpm",
+		"ftp",
+		"gd",
+		"gettext",
+		"gmp",
+		"hash",
+		"iconv",
+		"imap",
+		"intl",
+		"json",
+		"ldap",
+		"libxml",
+		"mbstring",
+		"meta",
+		"mysqli",
+		"oci8",
+		"odbc",
+		"openssl",
+		"pcntl",
+		"pcre",
+		"PDO",
+		"pdo_ibm",
+		"pdo_mysql",
+		"pdo_pgsql",
+		"pdo_sqlite",
+		"pgsql",
+		"Phar",
+		"posix",
+		"pspell",
+		"random",
+		"readline",
+		"Reflection",
+		"session",
+		"shmop",
+		"SimpleXML",
+		"snmp",
+		"soap",
+		"sockets",
+		"sodium",
+		"SPL",
+		"sqlite3",
+		"standard",
+		"superglobals",
+		"sysvmsg",
+		"sysvsem",
+		"sysvshm",
+		"tidy",
+		"tokenizer",
+		"xml",
+		"xmlreader",
+		"xmlrpc",
+		"xmlwriter",
+		"xsl",
+		"Zend OPcache",
+		"zip",
+		"zlib",
+		"xdebug"
+	],
 	"json.format.enable": true,
 	"livePreview.notifyOnOpenLooseFile": false,
-	"liveServer.settings.CustomBrowser": "microsoft-edge",
-	"liveServer.settings.NoBrowser": true,
-	"liveServer.settings.donotShowInfoMsg": true,
-	"liveServer.settings.donotVerifyTags": true,
-	"liveServer.settings.useWebExt": false,
+	"liveshare.focusBehavior": "prompt",
 	"liveshare.launcherClient": "visualStudioCode",
+	"liveshare.showReadOnlyUsersInEditor": "always",
 	"material-icon-theme.folders.color": "#7cb342",
 	"material-icon-theme.opacity": 1,
 	"material-icon-theme.saturation": 1,
@@ -679,25 +979,31 @@
 	"path-intellisense.extensionOnImport": true,
 	"php.debug.executablePath": "C:/xampp/php/php.exe",
 	"php.validate.executablePath": "C:/xampp/php/php.exe",
+	"postman.telemetry.enabled": false,
+	"prettier.printWidth": 120,
 	"prettier.useTabs": true,
+	"python.analysis.autoFormatStrings": false,
+	"python.analysis.autoImportCompletions": true,
 	"python.analysis.typeCheckingMode": "basic",
-	"python.formatting.provider": "black",
+	"python.terminal.activateEnvInCurrentTerminal": true,
+	"python.terminal.executeInFileDir": true,
+	"python.terminal.focusAfterLaunch": true,
 	"security.workspace.trust.untrustedFiles": "open",
 	"settingsSync.ignoredExtensions": [
-		"vizzuhq.code-viz-stat",
-		"icrawl.discord-vscode",
-		"ms-python.isort",
-		"ms-python.vscode-pylance",
-		"ms-python.python",
-		"uctakeoff.vscode-counter",
 		"adamhartford.vscode-base64",
-		"mhutchie.git-graph"
+		"ms-python.isort",
+		"ms-python.python",
+		"ms-python.vscode-pylance",
+		"uctakeoff.vscode-counter",
+		"vizzuhq.code-viz-stat",
+		"icrawl.discord-vscode"
 	],
+	"telemetry.telemetryLevel": "crash",
 	"terminal.integrated.cursorStyle": "line",
 	"terminal.integrated.defaultProfile.windows": "Command Prompt",
+	"terminal.integrated.fontSize": 16,
 	"thunder-client.editorFontSize": 14,
 	"thunder-client.responseLimit": 20,
-	"vscode-edge-devtools.webhint": false,
 	"window.commandCenter": true,
 	"workbench.colorCustomizations": {
 		"terminal.ansiBlack": "#000000",
@@ -719,41 +1025,13 @@
 		"terminal.foreground": "#2EE2FA",
 		"terminalCursor.background": "#ffffff",
 		"terminalCursor.foreground": "#ffffff",
+		"tab.activeBorder": "#009670",
+		"tab.unfocusedActiveBorder": "#ff000000"
 	},
-	"workbench.colorTheme": "SynthWave '84",
+	"workbench.colorTheme": "Dark Mint",
+	"workbench.editor.empty.hint": "hidden",
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.productIconTheme": "fluent-icons",
 	"workbench.startupEditor": "none",
-	"workbench.tree.renderIndentGuides": "always",
-	"[css]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[html]": {
-		"editor.defaultFormatter": "vscode.html-language-features"
-	},
-	"[javascript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[json]": {
-		"editor.defaultFormatter": "vscode.json-language-features"
-	},
-	"[jsonc]": {
-		"editor.defaultFormatter": "vscode.json-language-features"
-	},
-	"[php]": {
-		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
-	},
-	"[python]": {
-		"editor.defaultFormatter": "ms-python.python",
-		"editor.insertSpaces": true,
-		"editor.tabSize": 4,
-		"editor.formatOnType": true,
-	},
-	"[sql]": {
-		"editor.defaultFormatter": "mtxr.sqltools"
-	},
-	"[xml]": {
-		"editor.defaultFormatter": "DotJoshJohnson.xml"
-	},
-	"terminal.integrated.fontSize": 16
+	"workbench.tree.renderIndentGuides": "always"
 }
