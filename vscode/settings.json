@@ -839,44 +839,6 @@
 		"–": true
 	},
 	"dbcode.ai.inlineCompletion": false,
-	"dbcode.connections": [
-		{
-			"connectionId": "bcR2E5mMlgQOkhtc5eVL8",
-			"name": "Anyboat Staging",
-			"driver": "mariadb",
-			"color": "#00A6FF",
-			"connectionType": "host",
-			"host": "92.205.59.80",
-			"port": 3306,
-			"ssl": false,
-			"username": "anyboat_stg_user",
-			"password": "",
-			"savePassword": "secretStorage",
-			"database": "anyboat_stg",
-			"connectionTimeout": 30,
-			"driverOptions": {
-				"retrievePublickey": true
-			}
-		},
-		{
-			"connectionId": "74M8Se9XJOhYWAUaoC-K9",
-			"name": "WhatsApp Integration",
-			"driver": "mariadb",
-			"color": "#009670",
-			"connectionType": "host",
-			"host": "92.205.59.80",
-			"port": 3306,
-			"ssl": false,
-			"username": "whatsapp-integration",
-			"password": "",
-			"savePassword": "secretStorage",
-			"database": "whatsapp-integration",
-			"connectionTimeout": 30,
-			"driverOptions": {
-				"retrievePublickey": true
-			}
-		}
-	],
 	"dbcode.history.enabled": true,
 	"dbcode.maxRowsToFetch": 500,
 	"dbcode.warnBeforeExecuteFullDoc": false,
