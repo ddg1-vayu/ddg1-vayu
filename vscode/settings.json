@@ -1,27 +1,36 @@
 {
 	"[blade]": {
-		"editor.defaultFormatter": "shufo.vscode-blade-formatter",
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
 		"editor.insertSpaces": false,
+		"editor.tabSize": 2
 	},
 	"[css]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode",
 		"editor.insertSpaces": false,
+		"editor.tabSize": 2
 	},
 	"[html]": {
-		"editor.defaultFormatter": "vscode.html-language-features",
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
 		"editor.insertSpaces": false,
+		"editor.tabSize": 2
 	},
 	"[javascript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode",
 		"editor.insertSpaces": false,
+		"editor.tabSize": 2
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
 	},
 	"[json]": {
 		"editor.defaultFormatter": "vscode.json-language-features",
 		"editor.insertSpaces": false,
+		"editor.tabSize": 2
 	},
 	"[jsonc]": {
 		"editor.defaultFormatter": "vscode.json-language-features",
 		"editor.insertSpaces": false,
+		"editor.tabSize": 2
 	},
 	"[php]": {
 		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
@@ -29,7 +38,6 @@
 		"editor.tabSize": 2
 	},
 	"[python]": {
-		// "editor.defaultFormatter": "ms-python.black-formatter",
 		"editor.formatOnSave": true,
 		"editor.formatOnType": true,
 		"editor.insertSpaces": true,
@@ -62,35 +70,18 @@
 		"HTML (Eex)",
 		"plist"
 	],
-	"cSpell.allowCompoundWords": true,
-	"cSpell.enabledFileTypes": {
-		"*": true,
-		"jsonc": false,
-		"xml": false
-	},
-	"cSpell.ignoreWords": [
-		"undislike"
-	],
-	"cSpell.language": "en",
-	"cSpell.userWords": [
-		"behavioural",
-		"dotenv",
-		"Dugar",
-		"hbspt",
-		"hsapi",
-		"hubspotutk",
-		"kaleyra",
-		"Kolkata",
-		"Photoshop",
-		"rediffmail",
-		"Vayu"
-	],
+	"chat.agent.enabled": true,
+	"chat.agent.thinkingStyle": "collapsedPreview",
+	"chat.editor.fontFamily": "Monaspace Neon Frozen",
+	"chat.editor.fontSize": 13,
+	"chat.editor.wordWrap": "on",
+	"chat.emptyState.history.enabled": true,
+	"chat.math.enabled": true,
 	"clock.alignment": "Right",
-	// "clock.format": "dddd | dd mmm yyyy | hh:MM:ss TT",
-	"clock.format": "dddd | dd mmm yyyy",
+	"clock.format": "dddd | dd mmm yyyy | hh:MM:ss TT",
 	"code-runner.executorMap": {
 		"php": "C:/xampp/php/php.exe",
-		"python": "C://Progra~1//Python312//python.exe",
+		"python": "C://Progra~1//Python313//python.exe",
 		"javascript": "node"
 	},
 	"code-runner.showRunCommandInExplorerContextMenu": false,
@@ -102,31 +93,44 @@
 		"jsonc",
 		"php"
 	],
+	"cSpell.allowCompoundWords": true,
+	"cSpell.enabledFileTypes": {
+		"*": true,
+		"jsonc": false,
+		"xml": false
+	},
+	"cSpell.language": "en",
+	"dbcode.ai.inlineCompletion": false,
+	"dbcode.history.enabled": true,
+	"dbcode.resultLocation": "beside",
+	"diffEditor.codeLens": true,
 	"diffEditor.experimental.showMoves": true,
 	"diffEditor.ignoreTrimWhitespace": true,
 	"diffEditor.maxComputationTime": 0,
 	"editor.accessibilitySupport": "off",
+	"editor.aiStats.enabled": true,
 	"editor.bracketPairColorization.enabled": true,
 	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
 	"editor.cursorBlinking": "smooth",
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.find.addExtraSpaceOnTop": false,
-	"editor.fontFamily": "Fantasque Sans Mono",
-	// "editor.fontFamily": "Inter Tight", //Fira Code iScript || Fantasque Sans Mono
-	"editor.fontLigatures": "'zero', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'calt'",
-	"editor.fontSize": 16,
+	"editor.fontFamily": "Monaspace Neon Frozen",
+	"editor.fontLigatures": "'zero', 'liga', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09', 'ss10', 'calt'",
+	"editor.fontSize": 15,
 	"editor.formatOnType": true,
 	"editor.guides.bracketPairs": "active",
 	"editor.guides.indentation": true,
 	"editor.inlayHints.enabled": "on",
+	"editor.inlineSuggest.fontFamily": "Monaspace Neon Frozen",
 	"editor.insertSpaces": false,
+	"editor.letterSpacing": -0.5,
 	"editor.lineHeight": 1.5,
 	"editor.linkedEditing": true,
 	"editor.minimap.enabled": false,
 	"editor.minimap.maxColumn": 150,
 	"editor.minimap.renderCharacters": false,
 	"editor.renderWhitespace": "none",
-	"editor.scrollBeyondLastLine": false,
+	"editor.scrollOnMiddleClick": true,
 	"editor.snippetSuggestions": "inline",
 	"editor.stickyScroll.enabled": false,
 	"editor.stickyScroll.maxLineCount": 4,
@@ -152,7 +156,7 @@
 						"source.sql.embedded.php"
 					],
 					"settings": {
-						"foreground": "#fff",
+						"foreground": "#fff"
 					}
 				},
 				{
@@ -184,7 +188,7 @@
 						"constant.other.database-name.sql"
 					],
 					"settings": {
-						"foreground": "#00B894",
+						"foreground": "#00B894"
 					}
 				},
 				{
@@ -192,7 +196,7 @@
 						"constant.other.table-name.sql"
 					],
 					"settings": {
-						"foreground": "#ffd700",
+						"foreground": "#ffd700"
 					}
 				},
 				{
@@ -208,12 +212,12 @@
 				{
 					"scope": [
 						"variable.other.global.php",
-						"variable.other.global.safer.php",
+						"variable.other.global.safer.php"
 					],
 					"settings": {
-						"foreground": "#00ffff",
+						"foreground": "#00ffff"
 					}
-				},
+				}
 			]
 		},
 		"[Dark Mint]": {
@@ -224,7 +228,7 @@
 						"keyword.operator",
 						"constant.numeric.css",
 						"keyword.other.unit.px.css",
-						"constant.numeric.decimal.js",
+						"constant.numeric.decimal.js"
 					],
 					"settings": {
 						"fontStyle": ""
@@ -288,7 +292,7 @@
 						"support.type.property-name.json.comments",
 						"constant.numeric",
 						"constant.numeric.css",
-						"entity.name.tag.html",
+						"entity.name.tag.html"
 					],
 					"settings": {
 						"fontStyle": "bold"
@@ -333,7 +337,7 @@
 						"variable.language.this.js",
 						"variable.other.constant.js",
 						"variable.other.object.js",
-						"variable.other.readwrite.js",
+						"variable.other.readwrite.js"
 					],
 					"settings": {
 						"fontStyle": "italic bold"
@@ -347,7 +351,7 @@
 						"source.sql.embedded.php"
 					],
 					"settings": {
-						"foreground": "#fff",
+						"foreground": "#fff"
 					}
 				},
 				{
@@ -426,7 +430,7 @@
 						"keyword.operator.error-control.php"
 					],
 					"settings": {
-						"foreground": "#DC143C",
+						"foreground": "#DC143C"
 					}
 				},
 				{
@@ -435,7 +439,7 @@
 						"keyword.other.new.php"
 					],
 					"settings": {
-						"foreground": "#F368E0",
+						"foreground": "#F368E0"
 					}
 				},
 				{
@@ -460,7 +464,7 @@
 					"scope": [
 						"constant.other.php",
 						"source.json meta.structure.dictionary.json support.type.property-name.json",
-						"support.type.property-name.json.comments",
+						"support.type.property-name.json.comments"
 					],
 					"settings": {
 						"foreground": "#ffd700"
@@ -472,12 +476,12 @@
 						"constant.numeric.css"
 					],
 					"settings": {
-						"foreground": "#f00",
+						"foreground": "#f00"
 					}
 				},
 				{
 					"scope": [
-						"entity.name.tag.html",
+						"entity.name.tag.html"
 					],
 					"settings": {
 						"foreground": "#9529c0"
@@ -527,7 +531,7 @@
 						"support.constant.ext.php"
 					],
 					"settings": {
-						"foreground": "#ffcc00",
+						"foreground": "#ffcc00"
 					}
 				},
 				{
@@ -535,7 +539,7 @@
 						"constant.other.table-name.sql"
 					],
 					"settings": {
-						"foreground": "#ffd700",
+						"foreground": "#ffd700"
 					}
 				},
 				{
@@ -543,18 +547,18 @@
 						"constant.other.database-name.sql"
 					],
 					"settings": {
-						"foreground": "#00B894",
+						"foreground": "#00B894"
 					}
 				},
 				{
 					"scope": [
 						"variable.other.global.php",
-						"variable.other.global.safer.php",
+						"variable.other.global.safer.php"
 					],
 					"settings": {
-						"foreground": "#00ffff",
+						"foreground": "#00ffff"
 					}
-				},
+				}
 			]
 		},
 		"[SynthWave '84]": {
@@ -614,6 +618,7 @@
 						"support.function.curl.php",
 						"support.function.datetime.php",
 						"support.function.dir.php",
+						"support.function.errorfunc.php",
 						"support.function.file.php",
 						"support.function.filter.php",
 						"support.function.hash.php",
@@ -653,9 +658,6 @@
 						"entity.other.attribute-name",
 						"entity.other.attribute-name.tag.jade",
 						"entity.other.attribute-name.tag.pug",
-						"string.quoted.single",
-						"string.quoted.double",
-						"string.quoted.other.backtick",
 						"source.sql.embedded.php",
 						"keyword.other.unit.px.css",
 						"keyword.other.unit.em.css",
@@ -720,7 +722,7 @@
 						"variable.other.object.js",
 						"variable.other.readwrite.js",
 						"variable.parameter",
-						"variable.parameter.js",
+						"variable.parameter.js"
 					],
 					"settings": {
 						"fontStyle": "italic bold"
@@ -838,19 +840,71 @@
 		"’": true,
 		"–": true
 	},
-	"dbcode.ai.inlineCompletion": false,
-	"dbcode.history.enabled": true,
-	"dbcode.maxRowsToFetch": 500,
-	"dbcode.warnBeforeExecuteFullDoc": false,
 	"editor.wordWrap": "on",
 	"editor.wordWrapColumn": 150,
 	"emmet.triggerExpansionOnTab": true,
-	"explorer.confirmDragAndDrop": false,
+	"explorer.confirmDragAndDrop": true,
 	"explorer.decorations.badges": true,
 	"explorer.sortOrder": "type",
+	"files.associations": {
+		".env": "properties"
+	},
 	"files.autoSave": "onFocusChange",
 	"files.trimFinalNewlines": true,
+	"geminicodeassist.customCommands": {
+		"add-phpdoc": "add phpdoc to the selection",
+		"add-jsdoc": "add jsdoc to the selection"
+	},
+	"geminicodeassist.enableTelemetry": false,
+	"geminicodeassist.languages": [
+		"php",
+		"javascript",
+		"css",
+		"html",
+		"sql",
+		"python"
+	],
+	"geminicodeassist.inlineSuggestions.enableAuto": false,
+	"geminicodeassist.updateChannel": "Default",
+	"git-graph.date.type": "Commit Date",
+	"git-graph.graph.style": "angular",
 	"git.path": "C:\\Program Files\\Git\\bin\\git.exe",
+	"git.terminalGitEditor": true,
+	"github.copilot.chat.commitMessageGeneration.instructions": [
+		{
+			"text": "Use proper conventional commit message formats with a clear, professional tone. Generate a detailed, well-structured commit message similar to modern changelogs: start with a concise title in present tense, followed by a short descriptive paragraph, bullet points highlighting key changes (starting with action verbs), and end with a brief summary (optional) of overall impact such as performance, UX, or maintainability improvements. Highlight any function names, variables, filenames, or specific values using backticks for clarity and readability."
+		}
+	],
+	"github.copilot.enable": {
+		"*": true,
+		"plaintext": false,
+		"markdown": false,
+		"scminput": false,
+		"blade": true,
+		"html": true,
+		"js": true,
+		"jsonc": false,
+		"php": true,
+		"python": true,
+		"mermaid.flowchart": false
+	},
+	"github.copilot.nextEditSuggestions.enabled": false,
+	"github.gitProtocol": "ssh",
+	"github.showAvatar": true,
+	"gitlens.ai.experimental.composer.enabled": false,
+	"gitlens.ai.model": "vscode",
+	"gitlens.ai.vscode.model": "copilot:claude-3.5-sonnet",
+	"gitlens.codeLens.enabled": false,
+	"gitlens.defaultDateFormat": null,
+	"gitlens.graph.dateFormat": null,
+	"gitlens.graph.dimMergeCommits": true,
+	"gitlens.graph.layout": "editor",
+	"gitlens.graph.minimap.enabled": false,
+	"gitlens.graph.showRemoteNames": true,
+	"gitlens.hovers.annotations.enabled": false,
+	"gitlens.views.commitDetails.files.layout": "tree",
+	"gitlens.views.formats.commits.description": "${author, }${agoOrDate} ${date}",
+	"gitlens.views.searchAndCompare.files.layout": "tree",
 	"html.format.indentHandlebars": true,
 	"html.format.indentInnerHtml": true,
 	"intelephense.environment.shortOpenTag": false,
@@ -892,10 +946,6 @@
 		"pcntl",
 		"pcre",
 		"PDO",
-		"pdo_ibm",
-		"pdo_mysql",
-		"pdo_pgsql",
-		"pdo_sqlite",
 		"pgsql",
 		"Phar",
 		"posix",
@@ -931,9 +981,6 @@
 	],
 	"json.format.enable": true,
 	"livePreview.notifyOnOpenLooseFile": false,
-	"liveshare.focusBehavior": "prompt",
-	"liveshare.launcherClient": "visualStudioCode",
-	"liveshare.showReadOnlyUsersInEditor": "always",
 	"material-icon-theme.folders.color": "#7cb342",
 	"material-icon-theme.opacity": 1,
 	"material-icon-theme.saturation": 1,
@@ -941,32 +988,48 @@
 	"path-intellisense.extensionOnImport": true,
 	"php.debug.executablePath": "C:/xampp/php/php.exe",
 	"php.validate.executablePath": "C:/xampp/php/php.exe",
+	"postman.mcp.notifications.postmanMCP": false,
+	"postman.settings.dotenv-detection-notification-visibility": false,
 	"postman.telemetry.enabled": false,
 	"prettier.printWidth": 120,
 	"prettier.useTabs": true,
 	"python.analysis.autoFormatStrings": false,
 	"python.analysis.autoImportCompletions": true,
+	"python.analysis.supportAllPythonDocuments": true,
 	"python.analysis.typeCheckingMode": "basic",
 	"python.terminal.activateEnvInCurrentTerminal": true,
 	"python.terminal.executeInFileDir": true,
 	"python.terminal.focusAfterLaunch": true,
+	"python.terminal.shellIntegration.enabled": true,
 	"security.workspace.trust.untrustedFiles": "open",
-	"settingsSync.ignoredExtensions": [
-		"adamhartford.vscode-base64",
-		"ms-python.isort",
-		"ms-python.python",
-		"ms-python.vscode-pylance",
-		"uctakeoff.vscode-counter",
-		"vizzuhq.code-viz-stat",
-		"icrawl.discord-vscode"
-	],
 	"telemetry.telemetryLevel": "crash",
 	"terminal.integrated.cursorStyle": "line",
 	"terminal.integrated.defaultProfile.windows": "Command Prompt",
+	"terminal.integrated.fontFamily": "Fantasque Sans Mono",
+	"terminal.integrated.fontLigatures.enabled": true,
+	"terminal.integrated.fontLigatures.featureSettings": "\"zero\" on, \"liga\" on, \"ss01\" on, \"ss02\" on, \"ss03\" on, \"ss04\" on, \"ss05\" on, \"ss06\" on, \"ss07\" on, \"ss08\" on, \"ss09\" on, \"ss10\" on, calt",
 	"terminal.integrated.fontSize": 16,
-	"thunder-client.editorFontSize": 14,
-	"thunder-client.responseLimit": 20,
+	"terminal.integrated.lineHeight": 1.125,
+	"terminal.integrated.profiles.windows": {
+		"Git Bash (Windows Terminal)": {
+			"path": "wt.exe",
+			"args": [
+				"--window",
+				"0",
+				"--maximized",
+				"--startingDirectory",
+				"${workspaceFolder}",
+				"-p",
+				"Git Bash"
+			],
+			"icon": "terminal-bash"
+		}
+	},
+	"terminal.integrated.shellIntegration.enabled": true,
+	"terminal.integrated.suggest.enabled": true,
+	"window.border": "off",
 	"window.commandCenter": true,
+	"window.systemColorTheme": "dark",
 	"workbench.colorCustomizations": {
 		"terminal.ansiBlack": "#000000",
 		"terminal.ansiBlue": "#0066FF",
@@ -990,10 +1053,12 @@
 		"tab.activeBorder": "#009670",
 		"tab.unfocusedActiveBorder": "#ff000000"
 	},
-	"workbench.colorTheme": "Dark Mint",
+	"workbench.colorTheme": "SynthWave '84",
 	"workbench.editor.empty.hint": "hidden",
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.productIconTheme": "fluent-icons",
 	"workbench.startupEditor": "none",
-	"workbench.tree.renderIndentGuides": "always"
+	"workbench.tree.renderIndentGuides": "always",
+	"levelUp.ui.vaultText.enabled": false,
+	"levelUp.dailyGoal.enabled": false
 }
